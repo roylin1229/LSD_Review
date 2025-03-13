@@ -25,7 +25,7 @@
         }
         h1 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         h2 {
             margin-top: 30px;
@@ -81,10 +81,37 @@
             text-decoration: underline;
         }
         img {
-            max-width: 100%;
+            max-width: 70%;
             height: auto;
             display: block;
             margin: 20px auto;
+        }
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+        .links {
+            margin-top: 30px;
+        }
+        .links h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .links ul li {
+            margin-bottom: 10px;
+        }
+        .links ul li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .links ul li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -92,12 +119,15 @@
     <div class="container">
         <h1>A Comprehensive Review of Image Line Segment Detection and Description: Taxonomies, Comparisons, and Challenges</h1>
         <div class="authors">
-            <p>Xinyu Lin (<a href="mailto:roylin_cv@163.com">roylin_cv@163.com</a>), Yingjie Zhou, Yipeng Liu, and Ce Zhu</p>
+            <p>Xinyu Lin (<a href="mailto:roylin_cv@163.com">roylin_cv@163.com</a>), Yipeng Liu, and Ce Zhu - University of Electronic Science and Technology of China</p>
+            <p>Yingjie Zhou - Sichuan University</p>
         </div>
+        <h2 style="text-align: center; margin-bottom: 20px;">IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI) 2024</h2>
         <div class="abstract">
             <h2>Abstract</h2>
             <p>An image line segment is a fundamental low-level visual feature that delineates straight, slender, and uninterrupted portions of objects and scenarios within images. Detection and description of line segments lay the basis for numerous vision tasks. Although many studies have aimed to detect and describe line segments, a comprehensive review is lacking, obstructing their progress. This study fills the gap by comprehensively reviewing related studies on detecting and describing two-dimensional image line segments to provide researchers with an overall picture and deep understanding. Based on their mechanisms, two taxonomies for line segment detection and description are presented to introduce, analyze, and summarize these studies, facilitating researchers to learn about them quickly and extensively. The key issues, core ideas, advantages and disadvantages of existing methods, and their potential applications for each category are analyzed and summarized, including previously unknown findings. The challenges in existing methods and corresponding insights for potentially solving them are also provided to inspire researchers. In addition, some state-of-the-art line segment detection and description algorithms are evaluated without bias, and the evaluation code will be publicly available. The theoretical analysis, coupled with the experimental results, can guide researchers in selecting the best method for their intended vision applications. Finally, this study provides insights for potentially interesting future research directions to attract more attention from researchers to this field.</p>
-            <img src="line_segment_taxonomy.jpg" alt="Taxonomy of Line Segment Detection and Description">
+            <img src="line_segment_taxonomy.png" alt="Taxonomy of Line Segment Detection and Description">
+            <p class="image-caption">Figure 1: Taxonomy of line segment detection and description methods, categorized based on their mechanisms.</p>
         </div>
 
         <div class="section">
@@ -123,11 +153,30 @@
             <p>This taxonomy will be continuously updated as new methods and advancements emerge.</p>
         </div>
 
+        <div class="links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://ieeexplore.ieee.org/document/10530374" target="_blank">IEEE Xplore Article Link</a></li>
+                <li><a href="https://arxiv.org/abs/2305.00264" target="_blank">arXiv Preprint Link</a></li>
+                <li><a href="https://github.com/roylin1229/line_segment_review" target="_blank">GitHub Evaluation Code</a></li>
+            </ul>
+        </div>
+
         <div class="references">
             <h2>References</h2>
             <ul>
-                <li>Lin, X., Zhou, Y., Liu, Y., & Zhu, C. (2024). A Comprehensive Review of Image Line Segment Detection and Description: Taxonomies, Comparisons, and Challenges. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(12), 8074-8093.</li>
-                <!-- Add more references as needed -->
+                <li>
+                    @ARTICLE{10530374,<br>
+                    author={Lin, Xinyu and Zhou, Yingjie and Liu, Yipeng and Zhu, Ce},<br>
+                    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},<br>
+                    title={A Comprehensive Review of Image Line Segment Detection and Description: Taxonomies, Comparisons, and Challenges},<br>
+                    year={2024},<br>
+                    volume={46},<br>
+                    number={12},<br>
+                    pages={8074-8093},<br>
+                    keywords={Image segmentation;Reviews;Task analysis;Image edge detection;Feature extraction;Taxonomy;Motion segmentation;Line segment description;line segment detection;line segment matching;low-level feature},<br>
+                    doi={10.1109/TPAMI.2024.3400881}}
+                </li>
             </ul>
         </div>
     </div>
