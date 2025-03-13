@@ -174,7 +174,16 @@
               window.onresize = resizeIframe;
             </script>
 
-            
+            <h3>Global Hough-based Methods</h3>
+            <iframe id="myIframe" src="global_hough.html" style="width: 100%; border: none;"></iframe>
+            <script>
+              function resizeIframe() {
+                const iframe = document.getElementById('myIframe');
+                iframe.style.height = (iframe.contentWindow.document.body.scrollHeight+100) + 'px';
+              }
+              window.onload = resizeIframe;
+              window.onresize = resizeIframe;
+            </script>
         </div>
 
         
