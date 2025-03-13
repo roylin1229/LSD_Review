@@ -127,6 +127,32 @@
             font-size: 0.8em;
             vertical-align: super;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+        .citation {
+            margin-bottom: 20px;
+        }
+        .citation p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -157,6 +183,110 @@
                 <li><strong>Hybrid-based methods:</strong> These methods incorporate multiple mechanisms to detect line segments, combining the strengths of different approaches.</li>
             </ul>
             <p>This taxonomy will be continuously updated as new methods and advancements emerge.</p>
+
+            <h3>Global Hough-based Methods</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Journal</th>
+                        <th>Year</th>
+                        <th>Code/Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hough Transform for Line Detection</td>
+                        <td>IEEE TPAMI</td>
+                        <td>1962</td>
+                        <td><a href="https://github.com/example/hough" target="_blank">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>Progressive Probabilistic Hough Transform</td>
+                        <td>CVPR</td>
+                        <td>2000</td>
+                        <td>Not Available</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Local-based Methods</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Journal</th>
+                        <th>Year</th>
+                        <th>Code/Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LSD: A Fast Line Segment Detector</td>
+                        <td>IEEE TPAMI</td>
+                        <td>2010</td>
+                        <td><a href="https://github.com/example/lsd" target="_blank">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>EDLines: A Real-Time Line Segment Detector</td>
+                        <td>Pattern Recognition Letters</td>
+                        <td>2011</td>
+                        <td>Not Available</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Learning-based Methods</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Journal</th>
+                        <th>Year</th>
+                        <th>Code/Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sem-LSD: A Learning-based Semantic Line Segment Detector</td>
+                        <td>CVPR</td>
+                        <td>2019</td>
+                        <td><a href="https://github.com/example/sem-lsd" target="_blank">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>SOLD2: Self-Supervised Occlusion-Aware Line Description and Detection</td>
+                        <td>CVPR</td>
+                        <td>2021</td>
+                        <td><a href="https://github.com/example/sold2" target="_blank">Code</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Hybrid-based Methods</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Journal</th>
+                        <th>Year</th>
+                        <th>Code/Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DeepLSD: Line Segment Detection and Refinement with Deep Image Gradients</td>
+                        <td>CVPR</td>
+                        <td>2023</td>
+                        <td><a href="https://github.com/example/deeplsd" target="_blank">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>LSDNet: Trainable Modification of LSD Algorithm</td>
+                        <td>IEEE Access</td>
+                        <td>2022</td>
+                        <td>Not Available</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="section">
@@ -168,34 +298,38 @@
                 <li><strong>Learning-based methods:</strong> These methods learn line segment representations using neural networks, leveraging both local and global features.</li>
             </ul>
             <p>This taxonomy will be continuously updated as new methods and advancements emerge.</p>
-        </div>
 
-        <div class="links">
-            <h2>Links</h2>
-            <p>For further exploration, you can access the following resources:</p>
-            <ul>
-                <li><a href="https://ieeexplore.ieee.org/document/10530374" target="_blank">IEEE Xplore Article Link</a> - Access the official publication on IEEE Xplore.</li>
-                <li><a href="https://arxiv.org/abs/2305.00264" target="_blank">arXiv Preprint Link</a> - Read the preprint version of this article on arXiv.</li>
-                <li><a href="https://github.com/roylin1229/line_segment_review" target="_blank">GitHub Evaluation Code</a> - Explore the publicly available evaluation code for this study.</li>
-            </ul>
-        </div>
+            <h3>Statistic-based Methods</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Journal</th>
+                        <th>Year</th>
+                        <th>Code/Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LBD: A Robust Descriptor for Line Matching</td>
+                        <td>IEEE TPAMI</td>
+                        <td>2013</td>
+                        <td><a href="https://github.com/example/lbd" target="_blank">Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>MLIOR: Multiple Local Intensity Order Representation</td>
+                        <td>Sensors</td>
+                        <td>2020</td>
+                        <td>Not Available</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <div class="references">
-            <h2>References</h2>
-            <ul>
-                <li>
-                    @ARTICLE{10530374,<br>
-                    author={Lin, Xinyu and Zhou, Yingjie and Liu, Yipeng and Zhu, Ce},<br>
-                    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},<br>
-                    title={A Comprehensive Review of Image Line Segment Detection and Description: Taxonomies, Comparisons, and Challenges},<br>
-                    year={2024},<br>
-                    volume={46},<br>
-                    number={12},<br>
-                    pages={8074-8093},<br>
-                    keywords={Image segmentation;Reviews;Task analysis;Image edge detection;Feature extraction;Taxonomy;Motion segmentation;Line segment description;line segment detection;line segment matching;low-level feature},<br>
-                    doi={10.1109/TPAMI.2024.3400881}}
-                </li>
-            </ul>
+            <h3>Structure-based Methods</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Article</th>
         </div>
     </div>
 </body>
