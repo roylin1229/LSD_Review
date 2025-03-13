@@ -184,6 +184,17 @@
               window.onload = resizeIframe;
               window.onresize = resizeIframe;
             </script>
+
+            <h3>Edge Fitting-based Methods</h3>
+            <iframe id="edge_fitting" src="edge_fitting.html" style="width: 100%; border: none;"></iframe>
+            <script>
+              function resizeIframe() {
+                const iframe = document.getElementById('edge_fitting');
+                iframe.style.height = (iframe.contentWindow.document.body.scrollHeight+100) + 'px';
+              }
+              window.onload = resizeIframe;
+              window.onresize = resizeIframe;
+            </script>
         </div>
 
         
