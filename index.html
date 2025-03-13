@@ -80,19 +80,49 @@
         .references ul li a:hover {
             text-decoration: underline;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>A Comprehensive Review of Image Line Segment Detection and Description: Taxonomies, Comparisons, and Challenges</h1>
         <div class="authors">
-            <p>Xinyu Lin, Yingjie Zhou, Yipeng Liu, and Ce Zhu</p>
+            <p>Xinyu Lin (<a href="mailto:roylin_cv@163.com">roylin_cv@163.com</a>), Yingjie Zhou, Yipeng Liu, and Ce Zhu</p>
         </div>
         <div class="abstract">
             <h2>Abstract</h2>
             <p>An image line segment is a fundamental low-level visual feature that delineates straight, slender, and uninterrupted portions of objects and scenarios within images. Detection and description of line segments lay the basis for numerous vision tasks. Although many studies have aimed to detect and describe line segments, a comprehensive review is lacking, obstructing their progress. This study fills the gap by comprehensively reviewing related studies on detecting and describing two-dimensional image line segments to provide researchers with an overall picture and deep understanding. Based on their mechanisms, two taxonomies for line segment detection and description are presented to introduce, analyze, and summarize these studies, facilitating researchers to learn about them quickly and extensively. The key issues, core ideas, advantages and disadvantages of existing methods, and their potential applications for each category are analyzed and summarized, including previously unknown findings. The challenges in existing methods and corresponding insights for potentially solving them are also provided to inspire researchers. In addition, some state-of-the-art line segment detection and description algorithms are evaluated without bias, and the evaluation code will be publicly available. The theoretical analysis, coupled with the experimental results, can guide researchers in selecting the best method for their intended vision applications. Finally, this study provides insights for potentially interesting future research directions to attract more attention from researchers to this field.</p>
+            <img src="line_segment_taxonomy.png" alt="Taxonomy of Line Segment Detection and Description">
         </div>
-        
+
+        <div class="section">
+            <h2>Taxonomy of Line Segment Detection Algorithms</h2>
+            <p>Based on their mechanisms, line segment detection algorithms can be categorized into four main categories:</p>
+            <ul>
+                <li><strong>Global Hough-based methods:</strong> These methods exploit the duality between points and curves in the image and Hough spaces to detect line segments.</li>
+                <li><strong>Local-based methods:</strong> These methods leverage consistent image features in local regions to detect line segments, followed by merging and validation processes.</li>
+                <li><strong>Learning-based methods:</strong> These methods learn line segment patterns using neural networks trained on carefully prepared datasets.</li>
+                <li><strong>Hybrid-based methods:</strong> These methods incorporate multiple mechanisms to detect line segments, combining the strengths of different approaches.</li>
+            </ul>
+            <p>This taxonomy will be continuously updated as new methods and advancements emerge.</p>
+        </div>
+
+        <div class="section">
+            <h2>Taxonomy of Line Segment Descriptor Algorithms</h2>
+            <p>Line segment descriptor algorithms can be categorized into three main categories:</p>
+            <ul>
+                <li><strong>Statistic-based methods:</strong> These methods describe line segments by counting features such as gradients or intensities in line regions of support (ROSs).</li>
+                <li><strong>Structure-based methods:</strong> These methods use additional local line segments to describe their relative relationships structurally.</li>
+                <li><strong>Learning-based methods:</strong> These methods learn line segment representations using neural networks, leveraging both local and global features.</li>
+            </ul>
+            <p>This taxonomy will be continuously updated as new methods and advancements emerge.</p>
+        </div>
+
         <div class="references">
             <h2>References</h2>
             <ul>
