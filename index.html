@@ -172,19 +172,15 @@
             
             <script>
               function resizeIframe(iframe) {
-                iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 50) + 'px';
+                iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 10) + 'px';
               }
-            
-              // 为每个 iframe 调整高度
               window.onload = function () {
                 const iframes = document.querySelectorAll('.resizable-iframe');
                 iframes.forEach(iframe => {
                   iframe.onload = () => resizeIframe(iframe);
-                  resizeIframe(iframe); // 初始调整
+                  resizeIframe(iframe); 
                 });
               };
-            
-              // 监听窗口大小变化
               window.addEventListener('resize', function () {
                 const iframes = document.querySelectorAll('.resizable-iframe');
                 iframes.forEach(iframe => resizeIframe(iframe));
