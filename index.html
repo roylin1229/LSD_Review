@@ -156,20 +156,20 @@
             <p class="image-caption">Figure 1: The structure of this review and high-level taxonomies of existing line segment detection and description methods.</p>
         </div>
 
-        <div>
-            <iframe id="referenceFrame" src="global_hough.html"></iframe>
-        </div>
+
+        <iframe id="myIframe" src="global_hough.html" style="width: 100%; border: none;"></iframe>
 
         <script>
-            function adjustIframeHeight() {
-                var iframe = document.getElementById("referenceFrame");
-                if (iframe.contentWindow.document.body) {
-                    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
-                }
-            }
+          function resizeIframe() {
+            const iframe = document.getElementById('myIframe');
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+          }
         
-            document.getElementById("referenceFrame").onload = adjustIframeHeight;
+          // 在页面加载和内容变化时调整高度
+          window.onload = resizeIframe;
+          window.onresize = resizeIframe;
         </script>
+
     </div>
 </body>
 </html>
