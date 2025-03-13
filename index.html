@@ -127,25 +127,9 @@
             font-size: 0.8em;
             vertical-align: super;
         }
-        table {
+        iframe {
             width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        td a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        td a:hover {
-            text-decoration: underline;
+            border: none;
         }
         .citation {
             margin-bottom: 20px;
@@ -173,8 +157,19 @@
         </div>
 
         <div>
-            <iframe src="global_hough.html" width="100%" height="auto" style="border:none;"></iframe>            
+            <iframe id="referenceFrame" src="global_hough.html"></iframe>
         </div>
+
+        <script>
+            function adjustIframeHeight() {
+                var iframe = document.getElementById("referenceFrame");
+                if (iframe.contentWindow.document.body) {
+                    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+                }
+            }
+        
+            document.getElementById("referenceFrame").onload = adjustIframeHeight;
+        </script>
     </div>
 </body>
 </html>
