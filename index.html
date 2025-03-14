@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Comprehensive Review of Image Line Segment Detection and Description: Taxonomies, Comparisons, and Challenges</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            letter-spacing: -1px;
+        }
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            color: #34495e;
+        }
+        p {
+            margin: 15px 0;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        .authors {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 25px;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .affiliations {
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 25px;
+            color: #666;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .abstract {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-left: 6px solid #3498db;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .references {
+            margin-top: 40px;
+        }
+        .references ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .references ul li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        .references ul li a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .references ul li a:hover {
+            text-decoration: underline;
+            color: #1c5980;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 25px auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            margin-top: -15px;
+            margin-bottom: 25px;
+            color: #666;
+        }
+        .journal-info {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: bold;
+            color: #555;
+            font-size: 1.2em;
+        }
+        .affiliations sup {
+            font-size: 0.8em;
+            vertical-align: super;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .citation {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        .citation p {
+            margin: 10px 0;
+            color: #555;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A Comprehensive Review of Image Line Segment Detection and Description: Taxonomies, Comparisons, and Challenges</h1>
+        
+        <div class="journal-info"><a href="https://ieeexplore.ieee.org/document/10530374" target="_blank">IEEE TPAMI 2024 Link</a>, <a href="https://arxiv.org/abs/2305.00264" target="_blank">arXiv Preprint Link</a>, <a href="https://github.com/roylin1229/line_segment_review" target="_blank">GitHub Evaluation Code</a></div>
+
+        <div class="authors">
+            <p>Xinyu Lin<sup>1</sup> (<a href="mailto:roylin_cv@163.com">roylin_cv@163.com</a>), Yingjie Zhou<sup>2</sup>, Yipeng Liu<sup>1</sup>, and Ce Zhu<sup>1*</sup></p>
+            <div class="affiliations">
+                <p><sup>1</sup>University of Electronic Science and Technology of China, <sup>2</sup>Sichuan University</p>
+            </div>
+        </div>
+        
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p>An image line segment is a fundamental low-level visual feature that delineates straight, slender, and uninterrupted portions of objects and scenarios within images. Detection and description of line segments lay the basis for numerous vision tasks. Although many studies have aimed to detect and describe line segments, a comprehensive review is lacking, obstructing their progress. This study fills the gap by comprehensively reviewing related studies on detecting and describing two-dimensional image line segments to provide researchers with an overall picture and deep understanding. Based on their mechanisms, two taxonomies for line segment detection and description are presented to introduce, analyze, and summarize these studies, facilitating researchers to learn about them quickly and extensively. The key issues, core ideas, advantages and disadvantages of existing methods, and their potential applications for each category are analyzed and summarized, including previously unknown findings. The challenges in existing methods and corresponding insights for potentially solving them are also provided to inspire researchers. In addition, some state-of-the-art line segment detection and description algorithms are evaluated without bias, and the evaluation code will be publicly available. The theoretical analysis, coupled with the experimental results, can guide researchers in selecting the best method for their intended vision applications. Finally, this study provides insights for potentially interesting future research directions to attract more attention from researchers to this field.</p>
+            <img src="line_segment_taxonomy.jpg">
+            <p class="image-caption">Figure 1: The structure of this review and high-level taxonomies of existing line segment detection and description methods.</p>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            <ul>
+                <li>
+                    @ARTICLE{10530374,<br>
+                    author={Lin, Xinyu and Zhou, Yingjie and Liu, Yipeng and Zhu, Ce},<br>
+                    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},<br>
+                    title={A Comprehensive Review of Image Line Segment Detection and Description: Taxonomies, Comparisons, and Challenges},<br>
+                    year={2024},<br>
+                    volume={46},<br>
+                    number={12},<br>
+                    pages={8074-8093},<br>
+                    keywords={Image segmentation;Reviews;Task analysis;Image edge detection;Feature extraction;Taxonomy;Motion segmentation;Line segment description;line segment detection;line segment matching;low-level feature},<br>
+                    doi={10.1109/TPAMI.2024.3400881}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="citation">
+            <p>X. Lin, Y. Zhou, Y. Liu and C. Zhu, "A Comprehensive Review of Image Line Segment Detection and Description: Taxonomies, Comparisons, and Challenges," in <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, vol. 46, no. 12, pp. 8074-8093, Dec. 2024, doi: 10.1109/TPAMI.2024.3400881.</p>
+        </div>
+
+        <div>
+            <h2>A Collection of Line Segment Detection Algorithms</h2>
+            <p>The tables below will be continuously updated as new methods and advancements emerge.</p>
+            
+            <h3>Global Hough-based Methods</h3>
+            <iframe class="resizable-iframe" src="detection_global_hough.html"></iframe>
+            <h3>Local-based Methods (Gradient Grouping-based Methods)</h3>
+            <iframe class="resizable-iframe" src="detection_gradient_grouping.html"></iframe>
+            <h3>Local-based Methods (Edge Fitting-based Methods)</h3>
+            <iframe class="resizable-iframe" src="detection_edge_fitting.html"></iframe>
+            <h3>Deep Learning-based Methods</h3>
+            <iframe class="resizable-iframe" src="detection_deep_learning.html"></iframe>            
+            <h3>Hybrid Methods</h3>
+            <iframe class="resizable-iframe" src="detection_hybrid.html"></iframe>           
+            <h3>Other Methods</h3>
+            <iframe class="resizable-iframe" src="detection_other.html"></iframe>   
+            
+            <h2>A Collection of Line Segment Description Algorithms</h2>
+            <p>The tables below will be continuously updated as new methods and advancements emerge.</p>
+            <h3>Statistic-based Methods</h3>
+            <iframe class="resizable-iframe" src="description_statistic.html"></iframe>
+            <h3>Structure-based Methods</h3>
+            <iframe class="resizable-iframe" src="description_structure.html"></iframe>
+            <h3>Deep Learning-based Methods</h3>
+            <iframe class="resizable-iframe" src="description_learning.html"></iframe>
+        
+            <script>
+              function resizeIframe(iframe) {
+                iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 20) + 'px';
+              }
+              window.onload = function () {
+                const iframes = document.querySelectorAll('.resizable-iframe');
+                iframes.forEach(iframe => {
+                  iframe.onload = () => resizeIframe(iframe);
+                  resizeIframe(iframe); 
+                });
+              };
+              window.addEventListener('resize', function () {
+                const iframes = document.querySelectorAll('.resizable-iframe');
+                iframes.forEach(iframe => resizeIframe(iframe));
+              });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
