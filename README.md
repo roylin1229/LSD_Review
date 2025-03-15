@@ -17,7 +17,7 @@ This repository contains the materials for the paper titled **"A Comprehensive R
 <sup>1</sup>University of Electronic Science and Technology of China  
 <sup>2</sup>Sichuan University
 
-## References
+## Citation
 ```bibtex
 @ARTICLE{10530374,
   author={Lin, Xinyu and Zhou, Yingjie and Liu, Yipeng and Zhu, Ce},
